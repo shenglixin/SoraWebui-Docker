@@ -53,8 +53,8 @@ pnpm dev
 
 ### 5. Or Use Docker
 ```bash
-docker build . your-image-name
-docker run -e NEXT_PUBLIC_SITE_URL=http://localhost -e OPENAI_API_KEY=sk-XXXXXX -e OPENAI_API_BASE_URL=http://localhost:8081 -e OPENAI_API_MODEL=sora-1.0-turbo -p 3000:3000 your-image-name
+docker build -t your-image-name .
+docker run -d -e NEXT_PUBLIC_SITE_URL=http://localhost -e OPENAI_API_KEY=sk-XXXXXX -e OPENAI_API_BASE_URL=http://localhost:8081 -e OPENAI_API_MODEL=sora-1.0-turbo -p 3000:3000 your-image-name
 ```
 
 ### 5. Open [http://localhost](http://localhost) with your browser to see it.
